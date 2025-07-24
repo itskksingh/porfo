@@ -5,11 +5,14 @@
   --foreground: #171717;
 }
 
+
+@theme {;
+  --color-main-blue: #1b74e4;
+  --color-dark-grey: #44566c;
+  --color-light-grey: #f3f6f6
+}
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-poppins: var(--font-poppins);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,7 +23,10 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("/img/body-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Poppins, sans-serif;
 }

@@ -1,11 +1,10 @@
-import { HiMiniArrowTrendingDown } from "react-icons/hi2";
+import React from 'react'
 
-const Home = () => {
+const ResumePage = () => {
   return (
-    <div className='bg-white rounded-2xl p-10'>
+       <div className='bg-white rounded-2xl p-10'>
       <div className='flex items-start gap-5 mb-4'>
-        <h1 className='text-4xl text-black font-semibold'>About Me</h1>
-        <HiMiniArrowTrendingDown className='w-10 h-10 text-main-blue' />
+        <h1 className='text-4xl text-black font-semibold'>Resume</h1>
       </div>
       <p className='text-dark-grey text-base'>
         I&apos; m Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print
@@ -16,7 +15,7 @@ const Home = () => {
       </p>
       <h1 className='text-4xl text-black font-semibold'> What I Do</h1>
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default ResumePage
