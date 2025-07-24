@@ -22,22 +22,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${poppins.variable} antialiased bg-gray-100 min-h-screen flex flex-col md:flex-row gap-6 p-4 pt-30`}>
+      <body
+        className={`${poppins.variable} antialiased bg-gray-100 min-h-screen flex flex-col md:flex-row gap-6 p-4 pt-10`}>
         {/* Sidebar */}
         <aside className='w-full md:w-[380px]'>
           <SideProfile />
         </aside>
 
         {/* Main content */}
-        <main className='flex-1'>{children}</main>
+        <main className='flex-1  lg:mt-45 space-y-10'>
+          <div className="block md:hidden">
+
+          <Navigation />
+          </div>
+          {children}
+        </main>
 
         {/* Bottom nav (optional) */}
-        <div>
+        <div className='hidden md:block'>
           <Navigation />
         </div>
       </body>
     </html>
   );
 }
-
-

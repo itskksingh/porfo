@@ -40,7 +40,7 @@ const menu = [
 
 const Navigation = () => {
   return (
-    <div className='w-fit bg-white rounded-2xl text-red-600 text-5xl p-6 gap-6 flex flex-col'>
+    <div className='w-full md:w-fit bg-white rounded-2xl text-red-600 text-5xl p-6 gap-6 flex flex-row md:flex-col justify-between'>
       {menu.map((m) => (
         <NavItem key={m.id} icon={m.icon} title={m.title} href={m.href} />
       ))}

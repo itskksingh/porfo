@@ -13,7 +13,7 @@ const BlogPage = () => {
         My aim is to bring across your message and identity in the most creative way. I created web design for many
         famous brand companies.
       </p>
-      <h1 className='text-4xl text-black font-semibold'> What I Do</h1>
+      <h1 className='text-4xl text-black font-semibold mt-10'> Whats I Do</h1>
     </div>
   );
 };
